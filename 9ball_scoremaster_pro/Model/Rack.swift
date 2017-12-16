@@ -10,4 +10,5 @@ import Foundation
 
 class Rack {
     var number:Int = 0
+    var innings:Int = 0
 }

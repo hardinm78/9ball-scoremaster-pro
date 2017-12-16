@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		8E2089581FD702A200494DE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2089571FD702A200494DE8 /* AppDelegate.swift */; };
-		8E20895A1FD702A200494DE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2089591FD702A200494DE8 /* ViewController.swift */; };
+		8E20895A1FD702A200494DE8 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2089591FD702A200494DE8 /* SetupViewController.swift */; };
 		8E20895D1FD702A200494DE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E20895B1FD702A200494DE8 /* Main.storyboard */; };
 		8E2089601FD702A200494DE8 /* _ball_scoremaster_pro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E20895E1FD702A200494DE8 /* _ball_scoremaster_pro.xcdatamodeld */; };
 		8E2089621FD702A200494DE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E2089611FD702A200494DE8 /* Assets.xcassets */; };
 		8E2089651FD702A200494DE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E2089631FD702A200494DE8 /* LaunchScreen.storyboard */; };
+		8E669E7B1FE4ADC3009C6BE5 /* RackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E669E7A1FE4ADC3009C6BE5 /* RackViewController.swift */; };
 		8E7F837D1FE469D900CA78FF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7F837C1FE469D900CA78FF /* Player.swift */; };
 		8E7F837F1FE46A9400CA78FF /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7F837E1FE46A9400CA78FF /* Match.swift */; };
 		8E7F83811FE4702100CA78FF /* Rack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7F83801FE4702100CA78FF /* Rack.swift */; };
@@ -21,12 +22,13 @@
 /* Begin PBXFileReference section */
 		8E2089541FD702A200494DE8 /* 9ball_scoremaster_pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 9ball_scoremaster_pro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E2089571FD702A200494DE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8E2089591FD702A200494DE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E2089591FD702A200494DE8 /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		8E20895C1FD702A200494DE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E20895F1FD702A200494DE8 /* _ball_scoremaster_pro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = _ball_scoremaster_pro.xcdatamodel; sourceTree = "<group>"; };
 		8E2089611FD702A200494DE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E2089641FD702A200494DE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E2089661FD702A200494DE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E669E7A1FE4ADC3009C6BE5 /* RackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RackViewController.swift; sourceTree = "<group>"; };
 		8E7F837C1FE469D900CA78FF /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		8E7F837E1FE46A9400CA78FF /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		8E7F83801FE4702100CA78FF /* Rack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rack.swift; sourceTree = "<group>"; };
@@ -62,18 +64,43 @@
 		8E2089561FD702A200494DE8 /* 9ball_scoremaster_pro */ = {
 			isa = PBXGroup;
 			children = (
+				8E669E791FE4AB0F009C6BE5 /* Controller */,
+				8E669E781FE4AB06009C6BE5 /* View */,
+				8E669E771FE4AAF9009C6BE5 /* Model */,
 				8E2089571FD702A200494DE8 /* AppDelegate.swift */,
-				8E2089591FD702A200494DE8 /* ViewController.swift */,
-				8E20895B1FD702A200494DE8 /* Main.storyboard */,
 				8E2089611FD702A200494DE8 /* Assets.xcassets */,
-				8E2089631FD702A200494DE8 /* LaunchScreen.storyboard */,
 				8E2089661FD702A200494DE8 /* Info.plist */,
 				8E20895E1FD702A200494DE8 /* _ball_scoremaster_pro.xcdatamodeld */,
+			);
+			path = 9ball_scoremaster_pro;
+			sourceTree = "<group>";
+		};
+		8E669E771FE4AAF9009C6BE5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				8E7F837C1FE469D900CA78FF /* Player.swift */,
 				8E7F83801FE4702100CA78FF /* Rack.swift */,
 				8E7F837E1FE46A9400CA78FF /* Match.swift */,
 			);
-			path = 9ball_scoremaster_pro;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E669E781FE4AB06009C6BE5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E20895B1FD702A200494DE8 /* Main.storyboard */,
+				8E2089631FD702A200494DE8 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E669E791FE4AB0F009C6BE5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E2089591FD702A200494DE8 /* SetupViewController.swift */,
+				8E669E7A1FE4ADC3009C6BE5 /* RackViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +175,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E669E7B1FE4ADC3009C6BE5 /* RackViewController.swift in Sources */,
 				8E7F837D1FE469D900CA78FF /* Player.swift in Sources */,
-				8E20895A1FD702A200494DE8 /* ViewController.swift in Sources */,
+				8E20895A1FD702A200494DE8 /* SetupViewController.swift in Sources */,
 				8E2089581FD702A200494DE8 /* AppDelegate.swift in Sources */,
 				8E7F837F1FE46A9400CA78FF /* Match.swift in Sources */,
 				8E7F83811FE4702100CA78FF /* Rack.swift in Sources */,

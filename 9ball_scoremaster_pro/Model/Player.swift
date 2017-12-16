@@ -13,12 +13,12 @@ class Player {
     
     var name: String
     var goal: Int
-    var score: Int
+    var score: Int = 0
     
-    init(name:String,goal:Int,score:Int) {
+    init(name:String,goal:Int) {
         self.name = name
         self.goal = goal
-        self.score = score
+        
     }
     
 }
