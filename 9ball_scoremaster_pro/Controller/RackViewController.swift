@@ -14,15 +14,17 @@ class RackViewController: UIViewController {
     @IBOutlet weak var p2NameLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+    }
+    override func viewDidAppear(_ animated: Bool) {
         if player1?.name != nil {
             p1NameLabel.text = player1?.name
         }
         if player2?.name != nil {
             p2NameLabel.text = player2?.name
         }
-        // Do any additional setup after loading the view.
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

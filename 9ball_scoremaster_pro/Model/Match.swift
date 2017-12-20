@@ -13,6 +13,9 @@ class Match {
     var player1 : Player
     var player2 : Player
     
+    var winner: Player?
+    var loser: Player?
+    
     var totalInnings = 0
     var deadballs = 0    
     
