@@ -21,42 +21,34 @@ class SetupViewController: UIViewController {
         super.viewDidLoad()
         
     }
-
+    
     @IBAction func startPressed(_ sender: UIButton) {
         
-        if let p1Name = p1NameField.text {
+        if let p1Name = p1NameField.text  {
             if let p1Goal = Int(p1GoalField.text!){
-                player1 = Player(name: p1Name, goal: p1Goal)
-                print(player1!.name)
-                print(player1!.goal)
+                player1 = Player(name: p1Name, goal: p1Goal)                
+                if let p2Name = p2NameField.text {
+                    if let p2Goal = Int(p2GoalField.text!){
+                        player2 = Player(name: p2Name, goal: p2Goal)
+                    }                    
+                }
             }else {
                 let alert = UIAlertController(title: "Error", message: "Please enter valid inputs", preferredStyle: .alert)
                 let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
                 alert.addAction(cancel)
                 present(alert, animated: true, completion: nil)
+            }
         }
-        }
-        if let p2Name = p2NameField.text {
-            if let p2Goal = Int(p2GoalField.text!){
-                player2 = Player(name: p2Name, goal: p2Goal)
-                print(player2!.name)
-                print(player2!.goal)
-            }else {
-                let alert = UIAlertController(title: "Error", message: "Please enter valid inputs", preferredStyle: .alert)
-                let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-                alert.addAction(cancel)
-                present(alert, animated: true, completion: nil)
-        }
-    }
+        
+        
         if player1 != nil && player2 != nil {
             tabBarController?.selectedIndex = 1
         }
-    }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+        
         
     }
-
-
+    
+    
+    
 }
 

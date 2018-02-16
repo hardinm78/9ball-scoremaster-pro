@@ -15,7 +15,6 @@
 		8E2089651FD702A200494DE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E2089631FD702A200494DE8 /* LaunchScreen.storyboard */; };
 		8E669E7B1FE4ADC3009C6BE5 /* RackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E669E7A1FE4ADC3009C6BE5 /* RackViewController.swift */; };
 		8E7F837D1FE469D900CA78FF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7F837C1FE469D900CA78FF /* Player.swift */; };
-		8E7F837F1FE46A9400CA78FF /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7F837E1FE46A9400CA78FF /* Match.swift */; };
 		8E7F83811FE4702100CA78FF /* Rack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7F83801FE4702100CA78FF /* Rack.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +29,6 @@
 		8E2089661FD702A200494DE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E669E7A1FE4ADC3009C6BE5 /* RackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RackViewController.swift; sourceTree = "<group>"; };
 		8E7F837C1FE469D900CA78FF /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		8E7F837E1FE46A9400CA78FF /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		8E7F83801FE4702100CA78FF /* Rack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,7 +78,6 @@
 			children = (
 				8E7F837C1FE469D900CA78FF /* Player.swift */,
 				8E7F83801FE4702100CA78FF /* Rack.swift */,
-				8E7F837E1FE46A9400CA78FF /* Match.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -179,7 +176,6 @@
 				8E7F837D1FE469D900CA78FF /* Player.swift in Sources */,
 				8E20895A1FD702A200494DE8 /* SetupViewController.swift in Sources */,
 				8E2089581FD702A200494DE8 /* AppDelegate.swift in Sources */,
-				8E7F837F1FE46A9400CA78FF /* Match.swift in Sources */,
 				8E7F83811FE4702100CA78FF /* Rack.swift in Sources */,
 				8E2089601FD702A200494DE8 /* _ball_scoremaster_pro.xcdatamodeld in Sources */,
 			);

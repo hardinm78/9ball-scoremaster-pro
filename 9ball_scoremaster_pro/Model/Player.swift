@@ -14,6 +14,8 @@ class Player {
     var name: String
     var goal: Int
     var score: Int = 0
+    var defense: Int = 0
+    
     
     init(name:String,goal:Int) {
         self.name = name
@@ -21,4 +23,12 @@ class Player {
         
     }
     
+    func madeBall(){
+        score+=1
+        
+    }
+    
+    func madeNine(){
+        score+=2
+    }
 }
